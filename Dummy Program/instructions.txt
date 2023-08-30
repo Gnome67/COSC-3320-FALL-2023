@@ -1,1 +1,3 @@
+Dummy
 
+Write a program that repeats the stdin to stdout. 
