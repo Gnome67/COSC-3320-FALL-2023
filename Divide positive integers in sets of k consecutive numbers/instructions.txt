@@ -1,1 +1,43 @@
+Recursion
 
+Given an array of positive integers nums and a positive integer k, check whether it is possible to divide nums into sets of k consecutive numbers.
+
+Write a recursive function to solve this problem. Return true if it is possible. Otherwise, return false. The input has 2 lines. The first line is the array of positive integers nums. The second line is the positive integer k.
+Important Info:
+
+    You must solve this problem using recursion. If you do not use recursion, then you will not get any points for this assignment.
+    HINT: One data structure that is helpful in solving this problem is the heap (a.k.a. priority queue) data structure.
+    NOTE: There are some online solutions. However, most if not all of them are iterative algorithms. For example, there is a simple brute force solution that takes $O(n^2)$ time by checking all possible pairs. There are also solutions that use hashing (hashmaps, dictionaries, sets). These are not acceptable solutions. In any case, if we find a solution that is largely copied from another solution (e.g., in a verbatim manner or just simply changing variable names), it will be considered a violation of the academic honesty policy.
+
+Example 1:
+
+Input:
+1 2 3 3 4 5 5 6
+4
+
+Output:
+false
+
+Explanation: Array can be divided into [1,2,3,4] and [3,5,5,6]. However, [3,5,5,6] is not a set of 4 consecutive numbers.
+
+Example 2:
+
+Input:
+1 2 2 3
+2
+
+Output:
+true
+
+Explanation: Array can be divided into [1,2] and [2,3].
+
+Example 3:
+
+Input:
+1 2 3 4 5
+2
+
+Output:
+false
+
+Explanation: Array cannot be divided into sets of size 2.
