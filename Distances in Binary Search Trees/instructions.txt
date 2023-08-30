@@ -1,1 +1,23 @@
+ Given an array representing values to be added to an empty binary search tree in order, and a pair of these values, return the shortest path distance between these values in the tree after all values have been inserted.
 
+Input format:
+line 1: [node values for input tree]
+line 3: [node1] [node2]
+
+Examples
+
+Input:
+3 1 5 7 2 4
+1 7
+Output:
+3
+
+The shortest path from 1 to 7 is through their common ancestor 1.
+
+Input:
+3 1 5 7 2 4
+3 4
+Output:
+2
+
+This is because in the completed tree, 5 is a child of 3, and 4 is a child 
