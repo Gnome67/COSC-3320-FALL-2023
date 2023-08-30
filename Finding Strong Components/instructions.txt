@@ -1,1 +1,57 @@
+Finding Strong Components
 
+Graph
+
+Starter code: p7.cpp
+
+Given a directed graph, output the number of strong components in the graph. The algorithm must run in linear time.
+
+Hint: checkout the algorithm in figure 6.16 in the textbook, and the example execution in figure 6.17
+
+Input format:
+line 1: number of nodes in the graph n
+line 2 to 1+n: first number is the node label; second number is the number of outgoing edges; the rest is the successor of the current node.
+note: the nodes are labeled 1, 2, ..., n.
+
+Example 1
+
+Input:
+8
+1 1 2
+2 3 3 4 5
+3 1 1
+4 3 1 6 8
+5 1 6
+6 1 7
+7 1 5
+8 1 6
+Output:
+3
+Explanation:
+The graph has 3 strongly connected components.
+
+Example 2
+
+Input:
+16
+1 0
+2 1 4
+3 1 2
+4 2 3 7
+5 2 4 7
+6 1 5
+7 2 1 6
+8 2 11 5
+9 2 8 6
+10 1 9
+11 1 10
+12 1 16
+13 3 2 5 12
+14 2 13 7
+15 2 10 14
+16 1 14
+Output: 
+5
+Explanation:
+The graph has 5 strongly connected components. 
+    
