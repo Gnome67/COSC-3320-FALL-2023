@@ -1,1 +1,39 @@
+ In the game of chess, players can win, lose, or draw. For the sake of this problem, we say a player is in a slump if they either:
 
+    have more losses than combined wins and draws in the last three games
+    have not had a win in the last four games
+
+Given an input of a sequence of wins, losses and draws (depicted using characters W, L, and D), use a divide-and-conquer algorithm to determine whether the player is in a slump at any point, returning T if the player is in a slump at some point, and F otherwise.
+
+Input format:
+line 1: [single line of W, D, L characters separated by spaces, followed by a newline]
+
+Output format:
+[either T or F]
+
+Examples
+
+Input:
+W L L L
+Output:
+T
+
+From the second game, there are no wins or draws, therefore the player is in a slump after the third game.
+
+Input:
+W D L D
+Output:
+F
+
+At every point, there are more wins + draws than losses. The player is therefore never in a slump
+
+Input:
+D L D D L
+Output:
+T
+
+Although criteria (1) from above holds, there are no wins in 5 games, therefore the player satisfies criteria (2) and is in a slump
+
+Input: W W L W L Output: T
+
+After the final game, the last three games have more losses than wins, and thus form a slump.
