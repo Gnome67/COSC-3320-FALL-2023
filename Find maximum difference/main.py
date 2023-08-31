@@ -1,10 +1,7 @@
-class Solution:
-    def maxProfit(self, prices: List[int]) -> int:
-        min_price = prices[0]
-        max_profit = 0
-        
-        for price in prices[1:]:
-            max_profit = max(max_profit, price - min_price)
-            min_price = min(min_price, price)
-            
-        return max_profit
+def maximum_difference(self, question: List[int]) -> int:
+        minimum = question[0]
+        maximum = 0
+        for q in question[1:]:
+            maximum = max(maximum, q - minimum)
+            minimum = min(minimum, q)
+        return maximum
