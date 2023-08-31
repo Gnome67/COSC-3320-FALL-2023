@@ -1,6 +1,6 @@
-#include <vector>
 #include <iostream>
-#include <limits.h>
+#include <vector>
+#include <algorithm>
 using namespace std;
 
 // int maxDifference(vector<int> question)
@@ -15,38 +15,26 @@ using namespace std;
 //     return maximum;
 // }
 
-void maxDifference(vector<int>& question, int& minimum, int& maximum, int i)
-{         
-  //base condition
-  if(i>=question.size()) { return; }
-  if(question[i]<minimum) { minimum=question[i]; }
-	int sum=question[i]-minimum;
-  if(sum>maximum) { maximum=sum; }
-	maxDifference(question, minimum , maximum, i+1);
-}
+int maxDifference(const vector<int>& arr, int low, int high) {
+    if (low == high) { return 0; }
+    if (high == low + 1) { return max(0, arr[high] - arr[low]); }
 
-int maxDifference2(vector<int>& question)
-{
-  int minimum=INT_MAX;
-  int maximum=INT_MIN;
-  int i=0;
-  maxDifference(question, minimum , maximum, i);
-  return maximum;
-}
+    int mid = (low + high) / 2;
+    int maxDiffLeft = maxDifference(arr, low, mid);
+    int maxDiffRight = maxDifference(arr, mid + 1, high);
+    int minLeft = *min_element(arr.begin() + low, arr.begin() + mid + 1);
+    int maxRight = *max_element(arr.begin() + mid + 1, arr.begin() + high + 1);
+    int maxCrossDiff = maxRight - minLeft;
 
+    return max({maxDiffLeft, maxDiffRight, maxCrossDiff});
+}
 
 int main()
 {
-  int n;
-  int value;
-  cin >> n;
-  vector<int> question;
-  for(int x = 0; x < n; x++)
-  {
-    cin >> value;
-    question.push_back(value);
-  }
-	int answer = maxDifference2(question);
-	cout << answer;
-	return 0;
+    int n;
+    cin >> n;
+    vector<int> arr(n);
+    for (int i = 0; i < n; ++i) { cin >> arr[i]; }
+    cout << maxDifference(arr, 0, n - 1) << endl;
+    return 0;
 }
