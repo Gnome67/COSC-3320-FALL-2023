@@ -1,1 +1,65 @@
+ test 0 FAIL
 
+program output:
+
+32
+1 2 3
+
+expected output:
+
+3
+
+test 1 FAIL
+
+program output:
+
+94
+1 1 1 1 1 1 100 101 102
+
+expected output:
+
+102
+
+test 2 FAIL
+
+program output:
+
+153
+1 7 4 2 3 4 5 2 1 19 3 2 1 2 3
+
+expected output:
+
+20
+
+test 3 FAIL
+
+program output:
+
+154
+1 7 4 2 3 4 5 2 1 19 3 2 1 2 3
+
+expected output:
+
+19
+
+test 4 FAIL
+
+program output:
+
+101
+3 4 5 1 2 1 1 1 1 1
+
+expected output:
+
+20
+
+test 5 FAIL
+
+program output:
+
+11
+5
+
+expected output:
+
+5
