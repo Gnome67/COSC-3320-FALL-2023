@@ -3,8 +3,9 @@
 
 using namespace std;
 
-int main () {
+int main ()
+{
    string a;
    cin >> a;
-	cout << a;
+   cout << a;
 }
