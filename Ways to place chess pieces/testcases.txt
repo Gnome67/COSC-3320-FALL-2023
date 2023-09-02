@@ -1,1 +1,110 @@
+ test 0 FAIL
 
+program output:
+
+8 4
+. . . # . . . # 
+. . # . . . # . 
+. # . . . # . . 
+# . . . # . . . 
+. . . # . . . # 
+. . # . . . # . 
+. # . . . # . . 
+# . . . # . . .
+
+expected output:
+
+664
+
+test 1 FAIL
+
+program output:
+
+3 3
+# . # 
+. # # 
+. # #
+
+expected output:
+
+2
+
+test 2 FAIL
+
+program output:
+
+4 4
+. . . # 
+. . # . 
+. # . . 
+# . . .
+
+expected output:
+
+1
+
+test 3 FAIL
+
+program output:
+
+3 2
+# # # 
+# # # 
+# # #
+
+expected output:
+
+18
+
+test 4 FAIL
+
+program output:
+
+7 3
+. . . # # . . 
+# . # # . . # 
+. # # . . # # 
+# . . . # . . 
+# # . # # . # 
+. # # # # . # 
+. # . # # # .
+
+expected output:
+
+1066
+
+test 5 FAIL
+
+program output:
+
+8 3
+. . . # # . . # 
+# . # # . . # # 
+. # # . . # # # 
+# . . . # . . # 
+# # . # # . # # 
+. # # # # . # # 
+. # . # # # . . 
+. # . # # # . .
+
+expected output:
+
+3264
+
+test 6 FAIL
+
+program output:
+
+8 4
+. . . # # . . . 
+# . # # . . # . 
+. # # . . # # . 
+# . . . # . . . 
+# # . # # . # . 
+. # # # # . # . 
+. # . # # # . # 
+. # . # # # . #
+
+expected output:
+
+6671
