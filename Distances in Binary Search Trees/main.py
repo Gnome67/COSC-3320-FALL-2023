@@ -1,11 +1,11 @@
 class TreeNode:
-    def __init__(self, val=0, left=None, right=None):
+    def __init__(self, val):
         self.val = val
-        self.left = left
-        self.right = right
+        self.left = None
+        self.right = None
 
 def insert(root, val):
-    if not root:
+    if root is None:
         return TreeNode(val)
     if val < root.val:
         root.left = insert(root.left, val)
@@ -13,30 +13,40 @@ def insert(root, val):
         root.right = insert(root.right, val)
     return root
 
-def findPath(root, val, path=[]):
-    if not root:
-        return None
-    if root.val == val:
-        return path + [val]
-    leftPath = findPath(root.left, val, path + [root.val])
-    if leftPath:
-        return leftPath
-    return findPath(root.right, val, path + [root.val])
+def find_lca(root, node1, node2):
+    while root:
+        if root.val > node1 and root.val > node2:
+            root = root.left
+        elif root.val < node1 and root.val < node2:
+            root = root.right
+        else:
+            return root
 
-def calculateDistance(root, start, end):
-    path1 = findPath(root, start)
-    path2 = findPath(root, end)
-    
-    i = 0
-    while i < len(path1) and i < len(path2) and path1[i] == path2[i]:
-        i += 1
-    return len(path1[i:]) + len(path2[i:])
-            
+def find_depth(root, target):
+    depth = 0
+    while root:
+        if root.val == target:
+            return depth
+        elif target < root.val:
+            root = root.left
+        else:
+            root = root.right
+        depth += 1
+    return -1  # If target is not found
 
-tree = list(map(int, input().split()))
-start, end = list(map(int, input().split()))
+def shortest_path_distance(root, node1, node2):
+    lca = find_lca(root, node1, node2)
+    depth1 = find_depth(lca, node1)
+    depth2 = find_depth(lca, node2)
+    if depth1 == -1 or depth2 == -1:
+        return -1  # One of the nodes is not in the tree
+    return depth1 + depth2
+
+values = list(map(int, input().split()))
 root = None
-for val in tree:
+for val in values:
     root = insert(root, val)
 
-print(calculateDistance(root, start, end))
+node1, node2 = map(int, input().split())
+distance = shortest_path_distance(root, node1, node2)
+print(distance)
