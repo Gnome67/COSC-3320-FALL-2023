@@ -1,0 +1,79 @@
+ test 0 PASS
+
+program output:
+
+1
+
+expected output:
+
+1
+
+test 1 FAIL
+
+program output:
+
+4
+
+expected output:
+
+2
+
+test 2 FAIL
+
+program output:
+
+9
+
+expected output:
+
+6
+
+test 3 FAIL
+
+program output:
+
+100
+
+expected output:
+
+54
+
+test 4 FAIL
+
+program output:
+
+1657843
+
+expected output:
+
+876536
+
+test 5 FAIL
+
+program output:
+
+100000000
+
+expected output:
+
+32896342
+
+test 6 FAIL
+
+program output:
+
+123456789
+
+expected output:
+
+56614230
+
+test 7 FAIL
+
+program output:
+
+1000000000
+
+expected output:
+
+534765398
