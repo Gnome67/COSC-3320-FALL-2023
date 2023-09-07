@@ -1,0 +1,27 @@
+Serialization is the process of converting a data structure or object into a sequence of bits/bytes so that it can be stored in a file or memory buffer, or transmitted across a network connection link to be reconstructed later in the same or another computer environment. De-serialization is the opposite of serialization, namely, reading the stream of bytes and reconstructing the original data structure/object in memory.
+
+This problem is about de-serialization of a binary tree from a certain format B, and print out its in-order travesal trace.
+
+Constraints:
+
+    There are less than 10,000 nodes in the tree
+    Each node consists of left child, right child and a value of int type, which is in the range of [-10,000, 10,000]
+
+img_1.png
+
+Format B is based on the pre-order traversal of the binary tree. The format B serialized string for the shown binary tree is
+
+{3 {9 {} {}} {20 {15 {} {}} {7 {} {}}}}
+
+The format is formally defined as
+
+Tree = {Value {Tree} {Tree}} | {}
+
+{} stands for an empty tree, otherwise Tree is consists of a value and two sub-trees (left, right).
+
+Example 1
+
+Input: 
+{3 {9 {} {}} {20 {15 {} {}} {7 {} {}}}}
+Output:
+9 3 15 20 7
