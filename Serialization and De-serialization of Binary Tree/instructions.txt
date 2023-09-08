@@ -7,8 +7,6 @@ Constraints:
     There are less than 10,000 nodes in the tree
     Each node consists of left child, right child and a value of int type, which is in the range of [-10,000, 10,000]
 
-img_1.png
-
 Format B is based on the pre-order traversal of the binary tree. The format B serialized string for the shown binary tree is
 
 {3 {9 {} {}} {20 {15 {} {}} {7 {} {}}}}
