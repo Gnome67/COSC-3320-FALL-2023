@@ -1,3 +1,10 @@
+struct TreeNode {
+    int val;
+    TreeNode* left;
+    TreeNode* right;
+    TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+};
+
 class Codec {
 public:
     string serialize(TreeNode* root) {
@@ -8,6 +15,10 @@ public:
     TreeNode* deserialize(string data) {
         istringstream in(data);
         return decode(in);
+    }
+    TreeNode* buildTree(std::string data) {
+        std::istringstream ss(data);
+        return buildTreeHelper(ss);
     }
     
 private:
@@ -31,10 +42,21 @@ private:
         return root;
     }
 };
+    TreeNode* buildTreeHelper(std::istringstream& ss) {
+        std::string token;
+        ss >> token;
+        if (token == "{}") { return nullptr; }
+        TreeNode* root = new TreeNode(std::stoi(token));
+        root->left = buildTreeHelper(ss);
+        root->right = buildTreeHelper(ss);
+        return root;
+    }
 
 int main()
 {
-   string inputN = "";
-   getline(cin, inputN);
-   //process input
+    string inputN = "";
+    getline(cin, inputN);
+    Codec codec, ser, deser;
+    TreeNode* root = codec.buildTree(inputN);
+    TreeNode* ans = deser.deserialize(ser.serialize(root));
 }
