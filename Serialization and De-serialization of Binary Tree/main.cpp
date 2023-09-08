@@ -51,5 +51,5 @@ int main()
     getline(cin, inputN);
     Codec ser, deser;
     // initialize root
-    TreeNode* ans = deser.deserialize(ser.serialize(ans));
+    TreeNode* ans = deser.deserialize(ser.serialize(root));
 }
