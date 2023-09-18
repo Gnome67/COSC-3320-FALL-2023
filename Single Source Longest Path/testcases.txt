@@ -3532,5 +3532,3 @@ program output:
 expected output:
 
 365272
-
-takes 115.697779ms 
