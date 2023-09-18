@@ -1,0 +1,25 @@
+ Suppose you are given a sorted array of n distinct numbers that has been rotated k steps, for some unknown integer k between 1 and n- 1. That is, you are given an array A[1 ..n] such that some prefix A[1.. k] is sorted in increasing order, the corresponding suffix A[k + 1 ..n] is sorted in increasing order, and A[n] < A[1].
+
+For example, you might be given the following 16-element array (where k = 10): 9 13 16 18 19 23 28 31 37 42 1 3 4 5 7 8
+
+(a) Describe and analyze a divide and conquer algorithm to compute the unknown integer k. The expected answer should be O (log n). (b) Describe and analyze a divide and conquer algorithm to determine if the given array contains a given number x. The algorithm should return the index of x if the array contains the number, otherwise return -1. The expected answer should be O (log n).
+
+Input format:
+Array = [Elements of an array separated by space (1 2 3 4)]
+ValueToSearch = [Enter the value to find in array]
+
+Examples
+
+Input:
+9 13  16  18  19  23  28  31  37  42  1 3 4 5 7 8
+5
+Output:
+10
+13
+
+Input:
+9 13  16  18  19  23  28  31  37  42  1 3 4 5 7 8
+33
+Output:
+10
+-1
