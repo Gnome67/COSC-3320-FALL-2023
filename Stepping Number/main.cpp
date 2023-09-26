@@ -28,7 +28,6 @@ bool isStepNum(int num)
         int diff = abs(numStr[i] - numStr[i - 1]);
         if (diff != 1) { return false; }
     }
-
     return true;
 }
 
@@ -38,7 +37,6 @@ void findSteppingNumbers(int low, int high, int current, vector<int>& result)
     if (current == 0 || current > high) { return; }
     int lastDigit = current % 10;
     if (lastDigit > 0) { findSteppingNumbers(low, high, current * 10 + lastDigit - 1, result); }
-
     if (lastDigit < 9) { findSteppingNumbers(low, high, current * 10 + lastDigit + 1, result); }
 }
 
