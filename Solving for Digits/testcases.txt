@@ -1,1 +1,116 @@
+ test 0 FAIL
 
+program output:
+
+ABC
+ABC
+CBA
+ABAC
+
+expected output:
+
+054
+
+test 1 FAIL
+
+program output:
+
+ABCDEFG
+EADAG
+FEBBF
+CGDBFD
+
+expected output:
+
+3210764
+
+test 2 FAIL
+
+program output:
+
+ABCDEFGHI
+CAGGA
+DAFCI
+FBCHBE
+
+expected output:
+
+704591682
+
+test 3 FAIL
+
+program output:
+
+ABCDEFGH
+CEHGGH
+DBEDHA
+BHCADEF
+
+expected output:
+
+91685304
+
+test 4 FAIL
+
+program output:
+
+ABCDEFGH
+FHBAHE
+ADHCAC
+HBGCBDA
+
+expected output:
+
+84692501
+
+test 5 FAIL
+
+program output:
+
+ABCDEFGHI
+FFAAAHG
+CHIEAEA
+BBDBAHDA
+
+expected output:
+
+712498053
+
+test 6 FAIL
+
+program output:
+
+ABCDEFGHIJ
+HEBCIHG
+ADHGJHA
+EFJEBAAJ
+
+expected output:
+
+7234159806
+
+test 7 FAIL
+
+program output:
+
+ABCDEFGHIJ
+CFABFHBBJ
+AHAIGJBEC
+GDJDCDFAF
+
+expected output:
+
+3819574206
+
+test 8 FAIL
+
+program output:
+
+ABCDEFGHIJ
+GECFGGHIF
+GBAGBEFFI
+CFAHDJBDFF
+
+expected output:
+
+7315468902
