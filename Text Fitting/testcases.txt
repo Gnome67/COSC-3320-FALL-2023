@@ -1,0 +1,119 @@
+ test 0 FAIL
+
+program output:
+
+2
+6
+cosc 3320
+
+expected output:
+
+1
+
+test 1 FAIL
+
+program output:
+
+1
+1
+cannot fit
+
+expected output:
+
+0
+
+test 2 FAIL
+
+program output:
+
+3
+7
+one a bc
+
+expected output:
+
+2
+
+test 3 FAIL
+
+program output:
+
+2
+12
+hello world
+
+expected output:
+
+2
+
+test 4 FAIL
+
+program output:
+
+100
+100
+my name is
+
+expected output:
+
+900
+
+test 5 FAIL
+
+program output:
+
+1000
+1000
+The quick brown fox jumps over the lazy dog and into the tall grass the sun shining brightly overhead and the birds singing merrily in the trees while the wind rustles through the leaves and the flowers bloom in all their colorful glory and the children play happily in the park and the world is a beautiful place to be
+
+expected output:
+
+3117
+
+test 6 FAIL
+
+program output:
+
+100000
+100000
+this is a big container
+
+expected output:
+
+416650000
+
+test 7 FAIL
+
+program output:
+
+123
+456
+a b c d e f g h i j k l m n o p q r s t u v w x y z
+
+expected output:
+
+1078
+
+test 8 FAIL
+
+program output:
+
+9876
+5432
+this is a good text
+
+expected output:
+
+2681334
+
+test 9 FAIL
+
+program output:
+
+4321
+1234
+this is a very long wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwooooooooooooooooooooooooooooooooooooooooooooooooooooooooooorrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+
+expected output:
+
+17284
