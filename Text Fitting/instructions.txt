@@ -1,0 +1,33 @@
+Given a text (a sequence of words) and a container with a certain width and height, find the number of text that can be fitted in the container without splitting any words. There must be a single space between two consecutive words on a line.
+
+The input has 3 lines. The first line is an integer for width. The second line is an integer for height. The third line is a string for text.
+Important Info:
+
+    You must solve this problem using dynamic programming (DP). If you do not use DP, you will not receive any credit for this assignment.
+
+Example 1:
+
+Input:
+2
+6
+cosc 3320
+Output: 1
+
+Explanation: The text is a sequence of 2 words: cosc, 3320
+c o s c - -
+3 3 2 0 - -
+The character '-' signifies an empty space on the screen.
+
+Example 2:
+
+Input:
+3
+7
+one a bc
+Output: 2
+
+Explanation: The text is a sequence of 3 words: one, a, bc
+o n e - a - -
+b c - o n e -
+a - b c - - -
+The character '-' signifies an empty space on the screen.
