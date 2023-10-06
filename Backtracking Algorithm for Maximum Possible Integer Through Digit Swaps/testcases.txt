@@ -1,0 +1,131 @@
+ test 0 FAIL
+
+program output:
+
+129845
+3
+
+expected output:
+
+985241
+4
+
+test 1 FAIL
+
+program output:
+
+40153299912991563499
+0
+
+expected output:
+
+40153299912991563499
+11
+
+test 2 FAIL
+
+program output:
+
+40153299912991563499
+22
+
+expected output:
+
+99999996554433221110
+11
+
+test 3 FAIL
+
+program output:
+
+129814999
+2
+
+expected output:
+
+999814921
+4
+
+test 4 FAIL
+
+program output:
+
+129814999123456789129
+4
+
+expected output:
+
+999994982123456781121
+12
+
+test 5 FAIL
+
+program output:
+
+999999887766544322211110
+6
+
+expected output:
+
+999999887766544322211110
+0
+
+test 6 FAIL
+
+program output:
+
+15634986700345229991299
+9
+
+expected output:
+
+99999987665543224311200
+13
+
+test 7 FAIL
+
+program output:
+
+670034522999129945993
+8
+
+expected output:
+
+999999972654123245003
+14
+
+test 8 FAIL
+
+program output:
+
+4522999129945912981
+9
+
+expected output:
+
+9999999855442222111
+7
+
+test 9 FAIL
+
+program output:
+
+12981499912345678912967
+6
+
+expected output:
+
+99999988412345672112167
+14
+
+test 10 FAIL
+
+program output:
+
+7439812367854015320989
+4
+
+expected output:
+
+9998812367854015320743
+13
