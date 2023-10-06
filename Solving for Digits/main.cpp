@@ -5,7 +5,7 @@
 
 using namespace std;
 
-bool isValidAssignment(const string &string1, const string &string2, const string &target, const unordered_map<char, char> &symbol_to_digit)
+bool isValid(const string &string1, const string &string2, const string &target, const unordered_map<char, char> &symbol_to_digit)
 {
     int num1 = 0, num2 = 0, result = 0;
     for (char c : string1) { num1 = num1 * 10 + (symbol_to_digit.at(c) - '0'); }
@@ -18,7 +18,7 @@ bool backTrack(int index, const string &symbols, const string &string1, const st
 {
     if (index == symbols.size())
     {
-        if (isValidAssignment(string1, string2, target, symbol_to_digit)) { return true; }
+        if (isValid(string1, string2, target, symbol_to_digit)) { return true; }
         return false;
     }
     for (char digit = '0'; digit <= '9'; ++digit)
