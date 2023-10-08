@@ -51,7 +51,13 @@ int main()
 {
     string symbols, string1, string2, target;
     cin >> symbols >> string1 >> string2 >> target;
-    string output = solveSymbols(symbols, string1, string2, target);
-    cout << output << endl;
+    unordered_map<char, char> symbol_to_digit;
+    vector<bool> used_digits(10, false);
+    string result;
+    if (backTrack(0, symbols, string1, string2, target, symbol_to_digit, used_digits))
+    {
+        for (char c : symbols) { result += symbol_to_digit[c]; }
+    }
+    cout << result << endl;
     return 0;
 }
