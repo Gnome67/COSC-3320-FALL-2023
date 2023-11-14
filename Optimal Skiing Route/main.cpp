@@ -6,11 +6,6 @@
 
 using namespace std;
 
-/*
-Imagine that a skiier (S) is skiing down a mountain depicted as an n x n mountain of characters. The skiier starts at the top of the mountain (top-left square) and can only go downhill (down or to the right). In the skiier's path, there is regular snow (.), obstacles (O), and flags (F). Passing through regular snow or flags takes 1 second on each square, while obstacles require slowing down to avoid and take 3 seconds to pass through. Each flag is collected when passed through. Upon reaching the bottom of the mountain (bottom-right square) the player receives 5 points for every flag collected, and loses one point for every second taken more than a pace time.
-Return the highest score possible, and the number of flags collected on that run. If there are multiple runs with the same highest score, pick one with the maximum number of flags. A dynamic programming solution should have runtime O(n^2).
-*/
-
 pair<int, int> optimalSkiingRoute(int n, int pace, vector<vector<char>> &mountain) {
     vector<vector<pair<int, int>>> scoreboard(n, vector<pair<int, int>>(n, {-1e9, 0}));
     scoreboard[0][0] = {0, 0};
