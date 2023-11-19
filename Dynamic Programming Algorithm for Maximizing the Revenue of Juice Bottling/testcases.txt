@@ -1,0 +1,119 @@
+ test 0 FAIL
+
+program output:
+
+0 1 3 2
+
+expected output:
+
+1 2
+
+test 1 FAIL
+
+program output:
+
+0 5 12 21 24 29 32 50 53 55 60 85 95 90 97 100 102 106 112 115 119 122 125 126 127 128 129 130 120 124 131 135 139 136 140 144 145 147 148 150
+
+expected output:
+
+3 12 12 12
+
+test 2 FAIL
+
+program output:
+
+0 1 3 5 10 7 12 15 13 21 24 29 32 35 37 41 44 48 50 53 55 60 69 64 73 79 81 85 95 90 97 100 102 106 112 115 119 122 125 124 131 135 139 136 140 144 145 147 148 150
+
+expected output:
+
+4 4 41
+
+test 3 FAIL
+
+program output:
+
+0 5 12 15 29 32 35 37 41 44 48 50 53 55 60 69 64 73 79 81 85 95 90 97 100 102 106 112 115 119 122 125 126 127 128 129 130 120 131 135 139 136 140 144 145 147 148 150 151 153 155 158 162 163 165 167
+
+expected output:
+
+1 2 4 4 4 4 4 4 4 4 4 4 4 4 4
+
+test 4 FAIL
+
+program output:
+
+0 1 3 2 4
+
+expected output:
+
+2 2
+
+test 5 FAIL
+
+program output:
+
+0 3 5 10 8 4 12 15 20 18 25
+
+expected output:
+
+1 3 3 3
+
+test 6 FAIL
+
+program output:
+
+0 1 3 7 5 4 12 15 20 18 25
+
+expected output:
+
+10
+
+test 7 FAIL
+
+program output:
+
+0 1 3 6 5 4 17 15 20 18 21
+
+expected output:
+
+1 3 6
+
+test 8 FAIL
+
+program output:
+
+0 1 3 5 4 8 7 12 15 13 16
+
+expected output:
+
+2 8
+
+test 9 FAIL
+
+program output:
+
+0 1 3 5 4 10 7 12 15 13 16
+
+expected output:
+
+5 5
+
+test 10 FAIL
+
+program output:
+
+0 1 3 5 4 10 7 12 15 13 16 21 24 29 32 35 37 41 44 48 50 53 55 60 69 64 73 79 81 85 95 90 97 100 102 106 112 115 119 122 125
+
+expected output:
+
+40
+
+test 11 FAIL
+
+program output:
+
+0 5 12 15 13 16 21 24 29 32 35 37 41 44 48 50 53 55 60 69 64 73 79 81 85 95 90 97 100 102 106 112 115 119 122 125 126 127 128 129 130 120
+
+expected output:
+
+1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
